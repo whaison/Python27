@@ -1,0 +1,4 @@
+Python Tools for Visual Studio
+The environment "New Environment 1" appears to be 
+incorrectry or missing. You need install Python 2.7 or
+re-create a virtual enviroment
