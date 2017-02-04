@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>b5b23988-5941-4d3f-982b-a881f2da00f7</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>fbx\samples\ExportScene01\ExportScene01.py</StartupFile>
+    <SearchPath>FBXpythonSDK201701\;FBXpythonSDK201701\include\;FBXpythonSDK201701\lib\;FBXpythonSDK201701\samples\;FBXpythonSDK201701\lib\Python27_x64\;..\..\Program Files\Autodesk\Maya2017\Python\Lib\site-packages\;..\..\Program Files\Autodesk\Maya2017\devkit\other\pymel\extras\completion\py\maya\;..\..\Program Files\Autodesk\Maya2017\Python\Lib\site-packages\pymel\core\;..\..\Program Files\Autodesk\Maya2017\lib\;..\..\Program Files\Autodesk\Maya2017\devkit\other\pymel\extras\completion\py\;fbx\;..\..\Program Files\Autodesk\FBX\FBX SDK\2017.1\include\;..\..\Program Files\Autodesk\FBX\FBX Python SDK\2017.1\include\</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <InterpreterId>{6235fbd1-bb10-46e7-b298-773771b08eee}</InterpreterId>
+    <LaunchProvider>IronPython (.NET) launcher</LaunchProvider>
+    <InterpreterVersion>2.7</InterpreterVersion>
+    <OutputPath>.</OutputPath>
+    <Name>py</Name>
+    <RootNamespace>py</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="py.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{6235fbd1-bb10-46e7-b298-773771b08eee}\2.7" />
+    <InterpreterReference Include="{883b3417-0405-4e4c-855d-ee4153c5e7e6}\2.7" />
+    <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\2.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DebugLogger00110.py" />
+    <Compile Include="FbxImport_WriteReadTrans_Z_00610.py" />
+    <Compile Include="fbx\lib\Python27_x64\DebugLogger00100.py" />
+    <Compile Include="fbx\lib\Python27_x64\FbxCommon - Copy.py" />
+    <Compile Include="fbx\lib\Python27_x64\FbxCommon.py" />
+    <Compile Include="fbx\lib\Python27_x64\FbxImport_WriteReadTrans_Z_00610.py" />
+    <Compile Include="fbx\lib\Python27_x64\GetKeyCurve00110.py" />
+    <Compile Include="fbx\lib\Python27_x64\WriteReadTrans_Z_00310.py" />
+    <Compile Include="fbx\lib\Python27_x86\FbxCommon.py" />
+    <Compile Include="fbx\samples\ExportScene01\ExportScene01.py" />
+    <Compile Include="fbx\samples\ExportScene02\ExportScene02.py" />
+    <Compile Include="fbx\samples\ExportScene03\ExportScene03.py" />
+    <Compile Include="fbx\samples\ExportScene04\ExportScene04.py" />
+    <Compile Include="fbx\samples\ImportScene\DisplayAnimation.py" />
+    <Compile Include="fbx\samples\ImportScene\DisplayCamera.py" />
+    <Compile Include="fbx\samples\ImportScene\DisplayCommon.py" />
+    <Compile Include="fbx\samples\ImportScene\DisplayGenericInfo.py" />
+    <Compile Include="fbx\samples\ImportScene\DisplayGlobalSettings.py" />
+    <Compile Include="fbx\samples\ImportScene\DisplayHierarchy.py" />
+    <Compile Include="fbx\samples\ImportScene\DisplayLight.py" />
+    <Compile Include="fbx\samples\ImportScene\DisplayLink.py" />
+    <Compile Include="fbx\samples\ImportScene\DisplayLodGroup.py" />
+    <Compile Include="fbx\samples\ImportScene\DisplayMarker.py" />
+    <Compile Include="fbx\samples\ImportScene\DisplayMaterial.py" />
+    <Compile Include="fbx\samples\ImportScene\DisplayMesh.py" />
+    <Compile Include="fbx\samples\ImportScene\DisplayNurb.py" />
+    <Compile Include="fbx\samples\ImportScene\DisplayPatch.py" />
+    <Compile Include="fbx\samples\ImportScene\DisplayPivotsAndLimits.py" />
+    <Compile Include="fbx\samples\ImportScene\DisplayPose.py" />
+    <Compile Include="fbx\samples\ImportScene\DisplayShape.py" />
+    <Compile Include="fbx\samples\ImportScene\DisplaySkeleton.py" />
+    <Compile Include="fbx\samples\ImportScene\DisplayTexture.py" />
+    <Compile Include="fbx\samples\ImportScene\DisplayUserProperties.py" />
+    <Compile Include="fbx\samples\ImportScene\ImportScene.py" />
+    <Compile Include="fbx\samples\Layers\Layers.py" />
+    <Compile Include="fbx\samples\SplitMeshPerMaterial\SplitMeshPerMaterial.py" />
+    <Compile Include="GetKeyCurve00110.py" />
+    <Compile Include="fbx_____.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="py2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WriteReadTrans_Z_00310.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="FBXpythonSDK201701\lib\Python27_x64\fbxsip.pyd">
+      <Name>fbxsip.pyd</Name>
+      <PythonExtension>FBXpythonSDK201701\lib\Python27_x64\fbxsip.pyd</PythonExtension>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="fbx\include\" />
+    <Folder Include="fbx\include\fbxsdk\" />
+    <Folder Include="fbx\" />
+    <Folder Include="fbx\include\fbxsdk\core\" />
+    <Folder Include="fbx\include\fbxsdk\core\arch\" />
+    <Folder Include="fbx\include\fbxsdk\core\base\" />
+    <Folder Include="fbx\include\fbxsdk\core\math\" />
+    <Folder Include="fbx\include\fbxsdk\core\sync\" />
+    <Folder Include="fbx\include\fbxsdk\fileio\" />
+    <Folder Include="fbx\include\fbxsdk\fileio\collada\" />
+    <Folder Include="fbx\include\fbxsdk\fileio\fbx\" />
+    <Folder Include="fbx\include\fbxsdk\utils\" />
+    <Folder Include="fbx\include\fbxsdk\scene\" />
+    <Folder Include="fbx\include\fbxsdk\scene\animation\" />
+    <Folder Include="fbx\include\fbxsdk\scene\constraint\" />
+    <Folder Include="fbx\include\fbxsdk\scene\geometry\" />
+    <Folder Include="fbx\include\fbxsdk\scene\shading\" />
+    <Folder Include="fbx\lib\" />
+    <Folder Include="fbx\lib\Python27_x86\" />
+    <Folder Include="fbx\lib\Python27_x64\" />
+    <Folder Include="fbx\lib\vs2012\" />
+    <Folder Include="fbx\samples\" />
+    <Folder Include="fbx\samples\ExportScene01\" />
+    <Folder Include="fbx\samples\ExportScene02\" />
+    <Folder Include="fbx\samples\ExportScene03\" />
+    <Folder Include="fbx\samples\ExportScene04\" />
+    <Folder Include="fbx\samples\ImportScene\" />
+    <Folder Include="fbx\samples\Layers\" />
+    <Folder Include="fbx\samples\SplitMeshPerMaterial\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fbx\include\fbxsdk.h" />
+    <Content Include="fbx\include\fbxsdk\core\arch\fbxalloc.h" />
+    <Content Include="fbx\include\fbxsdk\core\arch\fbxarch.h" />
+    <Content Include="fbx\include\fbxsdk\core\arch\fbxdebug.h" />
+    <Content Include="fbx\include\fbxsdk\core\arch\fbxnew.h" />
+    <Content Include="fbx\include\fbxsdk\core\arch\fbxstdcompliant.h" />
+    <Content Include="fbx\include\fbxsdk\core\arch\fbxtypes.h" />
+    <Content Include="fbx\include\fbxsdk\core\base\fbxarray.h" />
+    <Content Include="fbx\include\fbxsdk\core\base\fbxbitset.h" />
+    <Content Include="fbx\include\fbxsdk\core\base\fbxcharptrset.h" />
+    <Content Include="fbx\include\fbxsdk\core\base\fbxcontainerallocators.h" />
+    <Content Include="fbx\include\fbxsdk\core\base\fbxdynamicarray.h" />
+    <Content Include="fbx\include\fbxsdk\core\base\fbxfile.h" />
+    <Content Include="fbx\include\fbxsdk\core\base\fbxfolder.h" />
+    <Content Include="fbx\include\fbxsdk\core\base\fbxhashmap.h" />
+    <Content Include="fbx\include\fbxsdk\core\base\fbxintrusivelist.h" />
+    <Content Include="fbx\include\fbxsdk\core\base\fbxmap.h" />
+    <Content Include="fbx\include\fbxsdk\core\base\fbxmemorypool.h" />
+    <Content Include="fbx\include\fbxsdk\core\base\fbxmultimap.h" />
+    <Content Include="fbx\include\fbxsdk\core\base\fbxpair.h" />
+    <Content Include="fbx\include\fbxsdk\core\base\fbxredblacktree.h" />
+    <Content Include="fbx\include\fbxsdk\core\base\fbxset.h" />
+    <Content Include="fbx\include\fbxsdk\core\base\fbxstatus.h" />
+    <Content Include="fbx\include\fbxsdk\core\base\fbxstring.h" />
+    <Content Include="fbx\include\fbxsdk\core\base\fbxstringlist.h" />
+    <Content Include="fbx\include\fbxsdk\core\base\fbxtime.h" />
+    <Content Include="fbx\include\fbxsdk\core\base\fbxtimecode.h" />
+    <Content Include="fbx\include\fbxsdk\core\base\fbxutils.h" />
+    <Content Include="fbx\include\fbxsdk\core\fbxclassid.h" />
+    <Content Include="fbx\include\fbxsdk\core\fbxconnectionpoint.h" />
+    <Content Include="fbx\include\fbxsdk\core\fbxdatatypes.h" />
+    <Content Include="fbx\include\fbxsdk\core\fbxemitter.h" />
+    <Content Include="fbx\include\fbxsdk\core\fbxevent.h" />
+    <Content Include="fbx\include\fbxsdk\core\fbxeventhandler.h" />
+    <Content Include="fbx\include\fbxsdk\core\fbxlistener.h" />
+    <Content Include="fbx\include\fbxsdk\core\fbxloadingstrategy.h" />
+    <Content Include="fbx\include\fbxsdk\core\fbxmanager.h" />
+    <Content Include="fbx\include\fbxsdk\core\fbxmodule.h" />
+    <Content Include="fbx\include\fbxsdk\core\fbxobject.h" />
+    <Content Include="fbx\include\fbxsdk\core\fbxperipheral.h" />
+    <Content Include="fbx\include\fbxsdk\core\fbxplugin.h" />
+    <Content Include="fbx\include\fbxsdk\core\fbxplugincontainer.h" />
+    <Content Include="fbx\include\fbxsdk\core\fbxproperty.h" />
+    <Content Include="fbx\include\fbxsdk\core\fbxpropertydef.h" />
+    <Content Include="fbx\include\fbxsdk\core\fbxpropertyhandle.h" />
+    <Content Include="fbx\include\fbxsdk\core\fbxpropertypage.h" />
+    <Content Include="fbx\include\fbxsdk\core\fbxpropertytypes.h" />
+    <Content Include="fbx\include\fbxsdk\core\fbxquery.h" />
+    <Content Include="fbx\include\fbxsdk\core\fbxqueryevent.h" />
+    <Content Include="fbx\include\fbxsdk\core\fbxscopedloadingdirectory.h" />
+    <Content Include="fbx\include\fbxsdk\core\fbxscopedloadingfilename.h" />
+    <Content Include="fbx\include\fbxsdk\core\fbxstream.h" />
+    <Content Include="fbx\include\fbxsdk\core\fbxsymbol.h" />
+    <Content Include="fbx\include\fbxsdk\core\fbxsystemunit.h" />
+    <Content Include="fbx\include\fbxsdk\core\fbxxref.h" />
+    <Content Include="fbx\include\fbxsdk\core\math\fbxarray.h" />
+    <Content Include="fbx\include\fbxsdk\core\math\fbxbitset.h" />
+    <Content Include="fbx\include\fbxsdk\core\math\fbxcharptrset.h" />
+    <Content Include="fbx\include\fbxsdk\core\math\fbxcontainerallocators.h" />
+    <Content Include="fbx\include\fbxsdk\core\math\fbxdynamicarray.h" />
+    <Content Include="fbx\include\fbxsdk\core\math\fbxfile.h" />
+    <Content Include="fbx\include\fbxsdk\core\math\fbxfolder.h" />
+    <Content Include="fbx\include\fbxsdk\core\math\fbxhashmap.h" />
+    <Content Include="fbx\include\fbxsdk\core\math\fbxintrusivelist.h" />
+    <Content Include="fbx\include\fbxsdk\core\math\fbxmap.h" />
+    <Content Include="fbx\include\fbxsdk\core\math\fbxmemorypool.h" />
+    <Content Include="fbx\include\fbxsdk\core\math\fbxmultimap.h" />
+    <Content Include="fbx\include\fbxsdk\core\math\fbxpair.h" />
+    <Content Include="fbx\include\fbxsdk\core\math\fbxredblacktree.h" />
+    <Content Include="fbx\include\fbxsdk\core\math\fbxset.h" />
+    <Content Include="fbx\include\fbxsdk\core\math\fbxstatus.h" />
+    <Content Include="fbx\include\fbxsdk\core\math\fbxstring.h" />
+    <Content Include="fbx\include\fbxsdk\core\math\fbxstringlist.h" />
+    <Content Include="fbx\include\fbxsdk\core\math\fbxtime.h" />
+    <Content Include="fbx\include\fbxsdk\core\math\fbxtimecode.h" />
+    <Content Include="fbx\include\fbxsdk\core\math\fbxutils.h" />
+    <Content Include="fbx\include\fbxsdk\core\sync\fbxatomic.h" />
+    <Content Include="fbx\include\fbxsdk\core\sync\fbxclock.h" />
+    <Content Include="fbx\include\fbxsdk\core\sync\fbxsync.h" />
+    <Content Include="fbx\include\fbxsdk\core\sync\fbxthread.h" />
+    <Content Include="fbx\include\fbxsdk\fbxsdk_def.h" />
+    <Content Include="fbx\include\fbxsdk\fbxsdk_nsbegin.h" />
+    <Content Include="fbx\include\fbxsdk\fbxsdk_nsend.h" />
+    <Content Include="fbx\include\fbxsdk\fbxsdk_version.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\collada\fbxcolladaanimationelement.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\collada\fbxcolladaelement.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\collada\fbxcolladaiostream.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\collada\fbxcolladanamespace.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\collada\fbxcolladatokens.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\collada\fbxcolladautils.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\collada\fbxreadercollada14.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\collada\fbxwritercollada14.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\fbxbase64coder.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\fbxexporter.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\fbxexternaldocreflistener.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\fbxfiletokens.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\fbxglobalcamerasettings.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\fbxgloballightsettings.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\fbxglobalsettings.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\fbxgobo.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\fbximporter.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\fbxiobase.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\fbxiopluginregistry.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\fbxiosettings.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\fbxiosettingspath.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\fbxprogress.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\fbxreader.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\fbxstatistics.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\fbxstatisticsfbx.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\fbxwriter.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\fbx\fbxio.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\fbx\fbxreaderfbx5.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\fbx\fbxreaderfbx6.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\fbx\fbxreaderfbx7.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\fbx\fbxwriterfbx5.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\fbx\fbxwriterfbx6.h" />
+    <Content Include="fbx\include\fbxsdk\fileio\fbx\fbxwriterfbx7.h" />
+    <Content Include="fbx\include\fbxsdk\scene\animation\fbxanimcurve.h" />
+    <Content Include="fbx\include\fbxsdk\scene\animation\fbxanimcurvebase.h" />
+    <Content Include="fbx\include\fbxsdk\scene\animation\fbxanimcurvefilters.h" />
+    <Content Include="fbx\include\fbxsdk\scene\animation\fbxanimcurvenode.h" />
+    <Content Include="fbx\include\fbxsdk\scene\animation\fbxanimevalclassic.h" />
+    <Content Include="fbx\include\fbxsdk\scene\animation\fbxanimevalstate.h" />
+    <Content Include="fbx\include\fbxsdk\scene\animation\fbxanimevaluator.h" />
+    <Content Include="fbx\include\fbxsdk\scene\animation\fbxanimlayer.h" />
+    <Content Include="fbx\include\fbxsdk\scene\animation\fbxanimstack.h" />
+    <Content Include="fbx\include\fbxsdk\scene\animation\fbxanimutilities.h" />
+    <Content Include="fbx\include\fbxsdk\scene\constraint\fbxcharacter.h" />
+    <Content Include="fbx\include\fbxsdk\scene\constraint\fbxcharacternodename.h" />
+    <Content Include="fbx\include\fbxsdk\scene\constraint\fbxcharacterpose.h" />
+    <Content Include="fbx\include\fbxsdk\scene\constraint\fbxconstraint.h" />
+    <Content Include="fbx\include\fbxsdk\scene\constraint\fbxconstraintaim.h" />
+    <Content Include="fbx\include\fbxsdk\scene\constraint\fbxconstraintcustom.h" />
+    <Content Include="fbx\include\fbxsdk\scene\constraint\fbxconstraintparent.h" />
+    <Content Include="fbx\include\fbxsdk\scene\constraint\fbxconstraintposition.h" />
+    <Content Include="fbx\include\fbxsdk\scene\constraint\fbxconstraintrotation.h" />
+    <Content Include="fbx\include\fbxsdk\scene\constraint\fbxconstraintscale.h" />
+    <Content Include="fbx\include\fbxsdk\scene\constraint\fbxconstraintsinglechainik.h" />
+    <Content Include="fbx\include\fbxsdk\scene\constraint\fbxconstraintutils.h" />
+    <Content Include="fbx\include\fbxsdk\scene\constraint\fbxcontrolset.h" />
+    <Content Include="fbx\include\fbxsdk\scene\constraint\fbxhik2fbxcharacter.h" />
+    <Content Include="fbx\include\fbxsdk\scene\fbxaxissystem.h" />
+    <Content Include="fbx\include\fbxsdk\scene\fbxcollection.h" />
+    <Content Include="fbx\include\fbxsdk\scene\fbxcollectionexclusive.h" />
+    <Content Include="fbx\include\fbxsdk\scene\fbxcontainer.h" />
+    <Content Include="fbx\include\fbxsdk\scene\fbxcontainertemplate.h" />
+    <Content Include="fbx\include\fbxsdk\scene\fbxdisplaylayer.h" />
+    <Content Include="fbx\include\fbxsdk\scene\fbxdocument.h" />
+    <Content Include="fbx\include\fbxsdk\scene\fbxdocumentinfo.h" />
+    <Content Include="fbx\include\fbxsdk\scene\fbxenvironment.h" />
+    <Content Include="fbx\include\fbxsdk\scene\fbxgroupname.h" />
+    <Content Include="fbx\include\fbxsdk\scene\fbxlibrary.h" />
+    <Content Include="fbx\include\fbxsdk\scene\fbxobjectfilter.h" />
+    <Content Include="fbx\include\fbxsdk\scene\fbxobjectmetadata.h" />
+    <Content Include="fbx\include\fbxsdk\scene\fbxobjectscontainer.h" />
+    <Content Include="fbx\include\fbxsdk\scene\fbxpose.h" />
+    <Content Include="fbx\include\fbxsdk\scene\fbxreference.h" />
+    <Content Include="fbx\include\fbxsdk\scene\fbxscene.h" />
+    <Content Include="fbx\include\fbxsdk\scene\fbxselectionnode.h" />
+    <Content Include="fbx\include\fbxsdk\scene\fbxselectionset.h" />
+    <Content Include="fbx\include\fbxsdk\scene\fbxtakeinfo.h" />
+    <Content Include="fbx\include\fbxsdk\scene\fbxthumbnail.h" />
+    <Content Include="fbx\include\fbxsdk\scene\fbxvideo.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxblendshape.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxblendshapechannel.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxcache.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxcachedeffect.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxcamera.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxcamerastereo.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxcameraswitcher.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxcluster.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxdeformer.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxgenericnode.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxgeometry.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxgeometrybase.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxgeometryweightedmap.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxlayer.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxlayercontainer.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxlight.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxlimitsutilities.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxline.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxlodgroup.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxmarker.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxmesh.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxnode.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxnodeattribute.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxnull.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxnurbs.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxnurbscurve.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxnurbssurface.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxopticalreference.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxpatch.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxproceduralgeometry.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxshape.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxskeleton.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxskin.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxsubdeformer.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxsubdiv.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxtrimnurbssurface.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxvertexcachedeformer.h" />
+    <Content Include="fbx\include\fbxsdk\scene\geometry\fbxweightedmapping.h" />
+    <Content Include="fbx\include\fbxsdk\scene\shading\fbxbindingoperator.h" />
+    <Content Include="fbx\include\fbxsdk\scene\shading\fbxbindingsentryview.h" />
+    <Content Include="fbx\include\fbxsdk\scene\shading\fbxbindingtable.h" />
+    <Content Include="fbx\include\fbxsdk\scene\shading\fbxbindingtablebase.h" />
+    <Content Include="fbx\include\fbxsdk\scene\shading\fbxbindingtableentry.h" />
+    <Content Include="fbx\include\fbxsdk\scene\shading\fbxconstantentryview.h" />
+    <Content Include="fbx\include\fbxsdk\scene\shading\fbxentryview.h" />
+    <Content Include="fbx\include\fbxsdk\scene\shading\fbxfiletexture.h" />
+    <Content Include="fbx\include\fbxsdk\scene\shading\fbximplementation.h" />
+    <Content Include="fbx\include\fbxsdk\scene\shading\fbximplementationfilter.h" />
+    <Content Include="fbx\include\fbxsdk\scene\shading\fbximplementationutils.h" />
+    <Content Include="fbx\include\fbxsdk\scene\shading\fbxlayeredtexture.h" />
+    <Content Include="fbx\include\fbxsdk\scene\shading\fbxlayerentryview.h" />
+    <Content Include="fbx\include\fbxsdk\scene\shading\fbxoperatorentryview.h" />
+    <Content Include="fbx\include\fbxsdk\scene\shading\fbxproceduraltexture.h" />
+    <Content Include="fbx\include\fbxsdk\scene\shading\fbxpropertyentryview.h" />
+    <Content Include="fbx\include\fbxsdk\scene\shading\fbxsemanticentryview.h" />
+    <Content Include="fbx\include\fbxsdk\scene\shading\fbxshadingconventions.h" />
+    <Content Include="fbx\include\fbxsdk\scene\shading\fbxsurfacelambert.h" />
+    <Content Include="fbx\include\fbxsdk\scene\shading\fbxsurfacematerial.h" />
+    <Content Include="fbx\include\fbxsdk\scene\shading\fbxsurfacephong.h" />
+    <Content Include="fbx\include\fbxsdk\scene\shading\fbxtexture.h" />
+    <Content Include="fbx\include\fbxsdk\utils\fbxclonemanager.h" />
+    <Content Include="fbx\include\fbxsdk\utils\fbxdeformationsevaluator.h" />
+    <Content Include="fbx\include\fbxsdk\utils\fbxembeddedfilesaccumulator.h" />
+    <Content Include="fbx\include\fbxsdk\utils\fbxgeometryconverter.h" />
+    <Content Include="fbx\include\fbxsdk\utils\fbxmanipulators.h" />
+    <Content Include="fbx\include\fbxsdk\utils\fbxmaterialconverter.h" />
+    <Content Include="fbx\include\fbxsdk\utils\fbxnamehandler.h" />
+    <Content Include="fbx\include\fbxsdk\utils\fbxprocessor.h" />
+    <Content Include="fbx\include\fbxsdk\utils\fbxprocessorshaderdependency.h" />
+    <Content Include="fbx\include\fbxsdk\utils\fbxprocessorxref.h" />
+    <Content Include="fbx\include\fbxsdk\utils\fbxprocessorxrefuserlib.h" />
+    <Content Include="fbx\include\fbxsdk\utils\fbxrenamingstrategy.h" />
+    <Content Include="fbx\include\fbxsdk\utils\fbxrenamingstrategybase.h" />
+    <Content Include="fbx\include\fbxsdk\utils\fbxrenamingstrategyfbx5.h" />
+    <Content Include="fbx\include\fbxsdk\utils\fbxrenamingstrategyfbx6.h" />
+    <Content Include="fbx\include\fbxsdk\utils\fbxrenamingstrategyfbx7.h" />
+    <Content Include="fbx\include\fbxsdk\utils\fbxrenamingstrategyutilities.h" />
+    <Content Include="fbx\include\fbxsdk\utils\fbxrootnodeutility.h" />
+    <Content Include="fbx\include\fbxsdk\utils\fbxscenecheckutility.h" />
+    <Content Include="fbx\include\fbxsdk\utils\fbxusernotification.h" />
+    <Content Include="fbx\lib\Python27_x64\fbx.pyd" />
+    <Content Include="fbx\lib\Python27_x64\fbxsip.pyd" />
+    <Content Include="fbx\lib\Python27_x86\fbx.pyd" />
+    <Content Include="fbx\lib\Python27_x86\fbxsip.pyd" />
+    <Content Include="fbx\lib\vs2012\fbxmax_amd64.exp" />
+    <Content Include="fbx\lib\vs2012\fbxmax_amd64.lib" />
+    <Content Include="fbx\lib\vs2012\fbxmaya_amd64.exp" />
+    <Content Include="fbx\lib\vs2012\fbxmaya_amd64.lib" />
+    <Content Include="fbx\samples\ExportScene02\gradient.jpg" />
+    <Content Include="fbx\samples\ExportScene02\scene02.jpg" />
+    <Content Include="fbx\samples\ExportScene03\gradient.jpg" />
+    <Content Include="fbx\samples\ExportScene03\scene03.jpg" />
+    <Content Include="fbx\samples\ExportScene03\spotty.jpg" />
+    <Content Include="fbx\samples\ExportScene04\gobo.tif" />
+    <Content Include="fbx\samples\ImportScene\DisplayCommon.pyc" />
+    <Content Include="fbx\samples\ImportScene\DisplayGlobalSettings.pyc" />
+    <Content Include="fbx\samples\Layers\1.jpg" />
+    <Content Include="fbx\samples\Layers\spotty.jpg" />
+    <Content Include="fbx\samples\Layers\waffle.jpg" />
+    <Content Include="fbx\samples\SplitMeshPerMaterial\multiplematerials.FBX" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
+  <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
