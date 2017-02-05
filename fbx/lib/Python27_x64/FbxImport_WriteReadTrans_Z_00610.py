@@ -42,6 +42,8 @@ def getHierarchy(fbxNode, node) :
 		node.addChild(nodeChild)
 		getHierarchy(fbxChild, nodeChild)
 
+import FbxCommon
+import FbxCommon00100
 class FbxImport_WriteReadTrans_Z_00610() :
 	Yen="\\"
 	FileName= "FbxImport_WriteReadTrans_Z_00610__Log.csv"
@@ -73,7 +75,7 @@ class FbxImport_WriteReadTrans_Z_00610() :
 		print ("==========================FbxImport_WriteReadTrans_Z_00610()=========================================")
 		#DebugLog_init(FullPass_DustDataTextFile_TXT,"--------none--------"):
 		#DebugLog_init()
-	def loadFile(self, filename,TransZwriteReader,GetKeyCurve_Instance) :
+	def loadFile(self, filename,TransZwriteReader,GetKeyCurve_Instance,FbxCommon00100_Instance) :
 		self.ref_TransZwriteReader_instance=TransZwriteReader
 		#self.ref_TransZwriteReader_instance.ExportWrite( floatNumstr );
 		#self.ref_TransZwriteReader_instance.ExportWrite( 0.123456789 );
@@ -83,9 +85,11 @@ class FbxImport_WriteReadTrans_Z_00610() :
 	def load(self) :
 		print ("loading ... self.filename= "+self.filename)
 		#print "loading : %s"%self.filename
-		manager = FbxManager.Create()
-		ios = FbxIOSettings.Create(manager, IOSROOT)
-		manager.SetIOSettings(ios)
+		#manager = FbxManager.Create()
+		manager=FbxCommon00100_Instance.GetFbxManager()
+		#ios = FbxIOSettings.Create(manager, IOSROOT)
+		inOutSetting=FbxCommon00100_Instance.GetFbxInOutSettings()
+		#manager.SetIOSettings(ios)
 		importer = FbxImporter.Create(manager, "")
 		fbxImportSuccesBool=importer.Initialize(self.filename, -1, manager.GetIOSettings()) 
 		DebugLog("fbxImportSuccesBool="+str(fbxImportSuccesBool))
@@ -179,6 +183,7 @@ class FbxImport_WriteReadTrans_Z_00610() :
 #=============================Code Start===============================================
 print(" Code Start="+__name__)
 Debug_Instance=DebugLogger00100.DebugLogger00100()
+FbxCommon00100_Instance = FbxCommon00100.FbxCommon00100()
 def DebugLogStart():
 	#print("DebugStr = "+ DebugStr)
 	Debug_Instance.DebugLogStart()
@@ -200,13 +205,13 @@ WriteReadTrans_ZInstance.fileDataZeroReset()
 #//////////////////////////////////////////////////////////////////////////////////////////////////
 #//////////////////////////////////// Class Unit Test /////////////////////////////////////////////
 #//////////////////////////////////////////////////////////////////////////////////////////////////	
-def StartMainLine(Debug,WriteReadTrans_Z_Instance,FBX_trans_z_Instance,GetKeyCurve_Instance):
+def StartMainLine(Debug,WriteReadTrans_Z_Instance,FBX_trans_z_Instance,GetKeyCurve_Instance,FbxCommon00100_Instance):
 	print(" ========================== StartMainLine ========================== ")
 	print(" ========================== StartMainLine ========================== ")
 	print(" ========================== StartMainLine ========================== ")	
 	DebugLogStart()
 	FBX_trans_z_Instance.Samething()
-	FBX_trans_z_Instance.loadFile(FBX_trans_z_Instance.FBX_FILE_PATH_AND_NAME_AND_EXT,WriteReadTrans_Z_Instance,GetKeyCurve_Instance)
+	FBX_trans_z_Instance.loadFile(FBX_trans_z_Instance.FBX_FILE_PATH_AND_NAME_AND_EXT,WriteReadTrans_Z_Instance,GetKeyCurve_Instance,FbxCommon00100_Instance)
 	
 	print(" ========================== END StartMainLine ========================== ")
 	print(" ========================== END StartMainLine ========================== ")
@@ -227,7 +232,7 @@ elif(__name__ == "FbxImport_WriteReadTrans_Z_00610"):
 	#Instance.loadFile(FBX_FILE_PATH_AND_NAME_AND_EXT)
 elif(__name__ == "__main__"):
 	print (u"============= 03 Simple Single Class Unit Test Start===== __main__ =====")
-	StartMainLine(Debug_Instance,WriteReadTrans_ZInstance,FBX_trans_z_Instance,GetKeyCurve_Instance)
+	StartMainLine(Debug_Instance,WriteReadTrans_ZInstance,FBX_trans_z_Instance,GetKeyCurve_Instance,FbxCommon00100_Instance)
 else:
 	print (u"__name__!=self.__class__.__name__  Othor File Import")
 	

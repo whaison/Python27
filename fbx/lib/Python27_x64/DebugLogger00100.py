@@ -8,9 +8,7 @@ class DebugLogger00100() :
 	#print("HD FULL PATH =")
 	#HD_FULL_PATH=os.path.abspath(__file__)
 	#print("os.path.abspath(__file__)    =     " + HD_FULL_PATH)
-	FullPass_DustDataTextFile_TXT= "D:"+Yen+"vs"+Yen+"py"+Yen+FileName
-	FullPass_DustDataTextFile_TXT= "C:"+Yen+"vs"+Yen+"py"+Yen+FileName
-	FullPass_DustDataTextFile_TXT= "C:"+Yen+"vs"+Yen+"py"+Yen+"fbx"+Yen+"lib"+Yen+"Python27_x64"+Yen+FileName
+	FullPass_DustDataTextFile_TXT= FileName
 	#fbx\lib\Python27_x64
 	def DebugLogger00100(self):
 		print("   DebugLogger00100.py   _Start.............")
@@ -37,7 +35,15 @@ class DebugLogger00100() :
 	def fileWrite(self,fullPass,DataStr):
 		print("fileWrite fullPass= "+fullPass)
 		print("fileWrite DataStr= "+DataStr)
-		f = open(fullPass, 'w') # 書き込みモードで開く
+		if fullPass=="":
+			self.Yen="\\"
+			self.FullPass_DustDataTextFile_TXT= "C:"+Yen+"vs"+Yen+"py"+Yen+FileName
+			self.FullPass_DustDataTextFile_TXT= "C:"+Yen+"vs"+Yen+"py"+Yen+"fbx"+Yen+"lib"+Yen+"Python27_x64"+Yen+FileName
+			self.FullPass_DustDataTextFile_TXT= FileName
+		else:
+			self.FullPass_DustDataTextFile_TX=	fullPass
+
+		f = open(self.FullPass_DustDataTextFile_TXT, 'w') # 書き込みモードで開く
     		#str = "This Data is Temp Please Delete"  # 書き込む文字列
     		#f = open('text.txt', 'w') # 書き込みモードで開く
     		#f.write(str) # 引数の文字列をファイルに書き込む
@@ -77,17 +83,19 @@ def StartMainLine(Instance):
 	print("HD FULL PATH =")
 	HD_FULL_PATH=os.path.abspath(__file__)
 	print("os.path.abspath(__file__)    =     " + HD_FULL_PATH)
-	FullPass_DustDataTextFile_TXT= "D:"+Yen+"vs"+Yen+"py"+Yen+FileName
-	FullPass_DustDataTextFile_TXT= "C:"+Yen+"vs"+Yen+"py"+Yen+FileName
-	FullPass_DustDataTextFile_TXT= "C:"+Yen+"vs"+Yen+"py"+Yen+"fbx"+Yen+"lib"+Yen+"Python27_x64"+Yen+FileName
+	#FullPass_DustDataTextFile_TXT= "D:"+Yen+"vs"+Yen+"py"+Yen+FileName
+	#FullPass_DustDataTextFile_TXT= "C:"+Yen+"vs"+Yen+"py"+Yen+FileName
+	#FullPass_DustDataTextFile_TXT= "C:"+Yen+"vs"+Yen+"py"+Yen+"fbx"+Yen+"lib"+Yen+"Python27_x64"+Yen+FileName
+	FullPass_DustDataTextFile_TXT= FileName
 	print("FullPass_DustDataTextFile_TXT="+FullPass_DustDataTextFile_TXT)
 	#===========================最初のプロジェクト
 	Instance.fileWrite(FullPass_DustDataTextFile_TXT,"none...\n")
 	
-	Instance.DebugLog("77 DabugLog White Data ");
-	Instance.DebugLog("77 DabugLog White Data ");
-	Instance.DebugLog("78 DabugLog White Data ");
-	Instance.DebugLog("78 DabugLog White Data ");
+	Instance.DebugLog("77 DabugLog White Data 1000 ");
+	Instance.DebugLog("77 DabugLog White Data 2 ");
+	Instance.DebugLog("78 DabugLog White Data 3 ");
+	Instance.DebugLog("78 DabugLog White Data  4 ");
+	Instance.DebugLog("78 DabugLog White Data  5 6789");
 	#DebugLog (u"__name__==self.__class__.__name__  Same!! File Test")
 	#DebugLog (u"=============Simple Single Class Unit Test Start==========")
 	#Instance.DebugLogger00100() #Call Method

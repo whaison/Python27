@@ -8,11 +8,10 @@ class WriteReadTrans_Z_00310() :
 	#print("HD FULL PATH =")
 	#HD_FULL_PATH=os.path.abspath(__file__)
 	#print("os.path.abspath(__file__)    =     " + HD_FULL_PATH)
-	FullPass_DustDataTextFile_TXT= "D:"+Yen+"vs"+Yen+"py"+Yen+FileName
-	FullPass_DustDataTextFile_TXT= "C:"+Yen+"vs"+Yen+"py"+Yen+FileName
-
-	FullPass_DustDataTextFile_TXT= "C:"+Yen+"vs"+Yen+"py"+Yen+"fbx"+Yen+"lib"+Yen+"Python27_x64"+Yen+FileName
-
+	#FullPass_DustDataTextFile_TXT= "D:"+Yen+"vs"+Yen+"py"+Yen+FileName
+	#FullPass_DustDataTextFile_TXT= "C:"+Yen+"vs"+Yen+"py"+Yen+FileName
+	#FullPass_DustDataTextFile_TXT= "C:"+Yen+"vs"+Yen+"py"+Yen+"fbx"+Yen+"lib"+Yen+"Python27_x64"+Yen+FileName
+	FullPass_DustDataTextFile_TXT= FileName
 	def WriteReadTrans_Z_00310(self):
 		print("WriteReadTrans_Z_00310_Start.............  filepath  = "+str(filepath))
 		#self.FullPass_DustDataTextFile_TXT=filepath
@@ -40,7 +39,14 @@ class WriteReadTrans_Z_00310() :
 	def fileWrite(self,fullPass,DataStr):
 		print("fileWrite fullPass= "+fullPass)
 		print("fileWrite DataStr= "+DataStr)
-		f = open(fullPass, 'w') # 書き込みモードで開く
+		if fullPass=="":
+			self.Yen="\\"
+			self.FullPass_DustDataTextFile_TXT= "C:"+Yen+"vs"+Yen+"py"+Yen+FileName
+			self.FullPass_DustDataTextFile_TXT= "C:"+Yen+"vs"+Yen+"py"+Yen+"fbx"+Yen+"lib"+Yen+"Python27_x64"+Yen+FileName
+			self.FullPass_DustDataTextFile_TXT= FileName
+		else:
+			self.FullPass_DustDataTextFile_TX=	fullPass
+		f = open(self.FullPass_DustDataTextFile_TXT, 'w') # 書き込みモードで開く
     		#str = "This Data is Temp Please Delete"  # 書き込む文字列
     		#f = open('text.txt', 'w') # 書き込みモードで開く
     		#f.write(str) # 引数の文字列をファイルに書き込む
@@ -126,7 +132,7 @@ def StartMainLine(FBX_trans_z_Instance):
 	
 	#=============================================================================
 	print("========================= Write Start==========================")
-	floatList = [1.111, 1.222, 1.333, 1.444, 1.555]
+	floatList = [1.111, 1.222, 1.333, 1.444, 1.555, 1.6666]
 	floatListLength=len(floatList)
 	for i in range(0, floatListLength):
 		print( str(i) )
