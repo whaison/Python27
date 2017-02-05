@@ -1,0 +1,2 @@
+Hello VBScript World     123
+debug_txt3

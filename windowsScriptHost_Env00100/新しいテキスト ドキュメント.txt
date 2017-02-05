@@ -1,0 +1,2 @@
+cscript //h:cscript
+wscript //h:cscript

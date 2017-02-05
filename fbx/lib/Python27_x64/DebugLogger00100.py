@@ -79,6 +79,7 @@ def StartMainLine(Instance):
 	print("os.path.abspath(__file__)    =     " + HD_FULL_PATH)
 	FullPass_DustDataTextFile_TXT= "D:"+Yen+"vs"+Yen+"py"+Yen+FileName
 	FullPass_DustDataTextFile_TXT= "C:"+Yen+"vs"+Yen+"py"+Yen+FileName
+	FullPass_DustDataTextFile_TXT= "C:"+Yen+"vs"+Yen+"py"+Yen+"fbx"+Yen+"lib"+Yen+"Python27_x64"+Yen+FileName
 	print("FullPass_DustDataTextFile_TXT="+FullPass_DustDataTextFile_TXT)
 	#===========================最初のプロジェクト
 	Instance.fileWrite(FullPass_DustDataTextFile_TXT,"none...\n")

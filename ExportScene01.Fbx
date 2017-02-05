@@ -1,0 +1,670 @@
+; FBX 7.5.0 project file
+; Copyright (C) 1997-2015 Autodesk Inc. and/or its licensors.
+; All rights reserved.
+; ----------------------------------------------------
+
+FBXHeaderExtension:  {
+	FBXHeaderVersion: 1003
+	FBXVersion: 7500
+	CreationTimeStamp:  {
+		Version: 1000
+		Year: 2017
+		Month: 2
+		Day: 5
+		Hour: 14
+		Minute: 18
+		Second: 38
+		Millisecond: 301
+	}
+	Creator: "FBX SDK/FBX Plugins version 2017.1"
+	SceneInfo: "SceneInfo::GlobalInfo", "UserData" {
+		Type: "UserData"
+		Version: 100
+		MetaData:  {
+			Version: 100
+			Title: "Example scene"
+			Subject: "Illustrates the creation and animation of a deformed cylinder."
+			Author: "ExportScene01.exe sample program."
+			Keywords: "deformed cylinder"
+			Revision: "rev. 1.0"
+			Comment: "no particular comments required."
+		}
+		Properties70:  {
+			P: "DocumentUrl", "KString", "Url", "", "ExportScene01.Fbx"
+			P: "SrcDocumentUrl", "KString", "Url", "", "ExportScene01.Fbx"
+			P: "Original", "Compound", "", ""
+			P: "Original|ApplicationVendor", "KString", "", "", ""
+			P: "Original|ApplicationName", "KString", "", "", ""
+			P: "Original|ApplicationVersion", "KString", "", "", ""
+			P: "Original|DateTime_GMT", "DateTime", "", "", ""
+			P: "Original|FileName", "KString", "", "", ""
+			P: "LastSaved", "Compound", "", ""
+			P: "LastSaved|ApplicationVendor", "KString", "", "", ""
+			P: "LastSaved|ApplicationName", "KString", "", "", ""
+			P: "LastSaved|ApplicationVersion", "KString", "", "", ""
+			P: "LastSaved|DateTime_GMT", "DateTime", "", "", ""
+		}
+	}
+}
+GlobalSettings:  {
+	Version: 1000
+	Properties70:  {
+		P: "UpAxis", "int", "Integer", "",1
+		P: "UpAxisSign", "int", "Integer", "",1
+		P: "FrontAxis", "int", "Integer", "",2
+		P: "FrontAxisSign", "int", "Integer", "",1
+		P: "CoordAxis", "int", "Integer", "",0
+		P: "CoordAxisSign", "int", "Integer", "",1
+		P: "OriginalUpAxis", "int", "Integer", "",-1
+		P: "OriginalUpAxisSign", "int", "Integer", "",1
+		P: "UnitScaleFactor", "double", "Number", "",1
+		P: "OriginalUnitScaleFactor", "double", "Number", "",1
+		P: "AmbientColor", "ColorRGB", "Color", "",0,0,0
+		P: "DefaultCamera", "KString", "", "", "Producer Perspective"
+		P: "TimeMode", "enum", "", "",0
+		P: "TimeProtocol", "enum", "", "",2
+		P: "SnapOnFrameMode", "enum", "", "",0
+		P: "TimeSpanStart", "KTime", "Time", "",0
+		P: "TimeSpanStop", "KTime", "Time", "",46186158000
+		P: "CustomFrameRate", "double", "Number", "",-1
+		P: "TimeMarker", "Compound", "", ""
+		P: "CurrentTimeMarker", "int", "Integer", "",-1
+	}
+}
+
+; Documents Description
+;------------------------------------------------------------------
+
+Documents:  {
+	Count: 1
+	Document: 8520512, "", "Scene" {
+		Properties70:  {
+			P: "SourceObject", "object", "", ""
+			P: "ActiveAnimStackName", "KString", "", "", ""
+		}
+		RootNode: 0
+	}
+}
+
+; Document References
+;------------------------------------------------------------------
+
+References:  {
+}
+
+; Object definitions
+;------------------------------------------------------------------
+
+Definitions:  {
+	Version: 100
+	Count: 27
+	ObjectType: "GlobalSettings" {
+		Count: 1
+	}
+	ObjectType: "Model" {
+		Count: 4
+		PropertyTemplate: "FbxNode" {
+			Properties70:  {
+				P: "QuaternionInterpolate", "enum", "", "",0
+				P: "RotationOffset", "Vector3D", "Vector", "",0,0,0
+				P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
+				P: "ScalingOffset", "Vector3D", "Vector", "",0,0,0
+				P: "ScalingPivot", "Vector3D", "Vector", "",0,0,0
+				P: "TranslationActive", "bool", "", "",0
+				P: "TranslationMin", "Vector3D", "Vector", "",0,0,0
+				P: "TranslationMax", "Vector3D", "Vector", "",0,0,0
+				P: "TranslationMinX", "bool", "", "",0
+				P: "TranslationMinY", "bool", "", "",0
+				P: "TranslationMinZ", "bool", "", "",0
+				P: "TranslationMaxX", "bool", "", "",0
+				P: "TranslationMaxY", "bool", "", "",0
+				P: "TranslationMaxZ", "bool", "", "",0
+				P: "RotationOrder", "enum", "", "",0
+				P: "RotationSpaceForLimitOnly", "bool", "", "",0
+				P: "RotationStiffnessX", "double", "Number", "",0
+				P: "RotationStiffnessY", "double", "Number", "",0
+				P: "RotationStiffnessZ", "double", "Number", "",0
+				P: "AxisLen", "double", "Number", "",10
+				P: "PreRotation", "Vector3D", "Vector", "",0,0,0
+				P: "PostRotation", "Vector3D", "Vector", "",0,0,0
+				P: "RotationActive", "bool", "", "",0
+				P: "RotationMin", "Vector3D", "Vector", "",0,0,0
+				P: "RotationMax", "Vector3D", "Vector", "",0,0,0
+				P: "RotationMinX", "bool", "", "",0
+				P: "RotationMinY", "bool", "", "",0
+				P: "RotationMinZ", "bool", "", "",0
+				P: "RotationMaxX", "bool", "", "",0
+				P: "RotationMaxY", "bool", "", "",0
+				P: "RotationMaxZ", "bool", "", "",0
+				P: "InheritType", "enum", "", "",0
+				P: "ScalingActive", "bool", "", "",0
+				P: "ScalingMin", "Vector3D", "Vector", "",0,0,0
+				P: "ScalingMax", "Vector3D", "Vector", "",1,1,1
+				P: "ScalingMinX", "bool", "", "",0
+				P: "ScalingMinY", "bool", "", "",0
+				P: "ScalingMinZ", "bool", "", "",0
+				P: "ScalingMaxX", "bool", "", "",0
+				P: "ScalingMaxY", "bool", "", "",0
+				P: "ScalingMaxZ", "bool", "", "",0
+				P: "GeometricTranslation", "Vector3D", "Vector", "",0,0,0
+				P: "GeometricRotation", "Vector3D", "Vector", "",0,0,0
+				P: "GeometricScaling", "Vector3D", "Vector", "",1,1,1
+				P: "MinDampRangeX", "double", "Number", "",0
+				P: "MinDampRangeY", "double", "Number", "",0
+				P: "MinDampRangeZ", "double", "Number", "",0
+				P: "MaxDampRangeX", "double", "Number", "",0
+				P: "MaxDampRangeY", "double", "Number", "",0
+				P: "MaxDampRangeZ", "double", "Number", "",0
+				P: "MinDampStrengthX", "double", "Number", "",0
+				P: "MinDampStrengthY", "double", "Number", "",0
+				P: "MinDampStrengthZ", "double", "Number", "",0
+				P: "MaxDampStrengthX", "double", "Number", "",0
+				P: "MaxDampStrengthY", "double", "Number", "",0
+				P: "MaxDampStrengthZ", "double", "Number", "",0
+				P: "PreferedAngleX", "double", "Number", "",0
+				P: "PreferedAngleY", "double", "Number", "",0
+				P: "PreferedAngleZ", "double", "Number", "",0
+				P: "LookAtProperty", "object", "", ""
+				P: "UpVectorProperty", "object", "", ""
+				P: "Show", "bool", "", "",1
+				P: "NegativePercentShapeSupport", "bool", "", "",1
+				P: "DefaultAttributeIndex", "int", "Integer", "",-1
+				P: "Freeze", "bool", "", "",0
+				P: "LODBox", "bool", "", "",0
+				P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+				P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+				P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+				P: "Visibility", "Visibility", "", "A",1
+				P: "Visibility Inheritance", "Visibility Inheritance", "", "",1
+			}
+		}
+	}
+	ObjectType: "Geometry" {
+		Count: 1
+		PropertyTemplate: "FbxPatch" {
+			Properties70:  {
+				P: "Color", "ColorRGB", "Color", "",0.8,0.8,0.8
+				P: "BBoxMin", "Vector3D", "Vector", "",0,0,0
+				P: "BBoxMax", "Vector3D", "Vector", "",0,0,0
+				P: "Primary Visibility", "bool", "", "",1
+				P: "Casts Shadows", "bool", "", "",1
+				P: "Receive Shadows", "bool", "", "",1
+			}
+		}
+	}
+	ObjectType: "NodeAttribute" {
+		Count: 3
+		PropertyTemplate: "FbxSkeleton" {
+			Properties70:  {
+				P: "Color", "ColorRGB", "Color", "",0.8,0.8,0.8
+				P: "Size", "double", "Number", "",100
+				P: "LimbLength", "double", "Number", "H",1
+			}
+		}
+	}
+	ObjectType: "Deformer" {
+		Count: 4
+	}
+	ObjectType: "Pose" {
+		Count: 2
+	}
+	ObjectType: "AnimationStack" {
+		Count: 2
+		PropertyTemplate: "FbxAnimStack" {
+			Properties70:  {
+				P: "Description", "KString", "", "", ""
+				P: "LocalStart", "KTime", "Time", "",0
+				P: "LocalStop", "KTime", "Time", "",0
+				P: "ReferenceStart", "KTime", "Time", "",0
+				P: "ReferenceStop", "KTime", "Time", "",0
+			}
+		}
+	}
+	ObjectType: "AnimationLayer" {
+		Count: 2
+		PropertyTemplate: "FbxAnimLayer" {
+			Properties70:  {
+				P: "Weight", "Number", "", "A",100
+				P: "Mute", "bool", "", "",0
+				P: "Solo", "bool", "", "",0
+				P: "Lock", "bool", "", "",0
+				P: "Color", "ColorRGB", "Color", "",0.8,0.8,0.8
+				P: "BlendMode", "enum", "", "",0
+				P: "RotationAccumulationMode", "enum", "", "",0
+				P: "ScaleAccumulationMode", "enum", "", "",0
+				P: "BlendModeBypass", "ULongLong", "", "",0
+			}
+		}
+	}
+	ObjectType: "AnimationCurveNode" {
+		Count: 4
+		PropertyTemplate: "FbxAnimCurveNode" {
+			Properties70:  {
+				P: "d", "Compound", "", ""
+			}
+		}
+	}
+	ObjectType: "AnimationCurve" {
+		Count: 4
+	}
+}
+
+; Object properties
+;------------------------------------------------------------------
+
+Objects:  {
+	Geometry: 8520768, "Geometry::Patch", "Patch" {
+		PatchVersion: 100
+		SurfaceDisplay: 4,4,4
+		PatchType: "BSpline", "BSpline"
+		Dimensions: 4,7
+		Step: 4,4
+		Closed: 1,0
+		UCapped: 0,0
+		VCapped: 0,0
+		Points: *84 {
+			a: 15,0,-60,0,-15,-60,-15,0,-60,0,15,-60,15,0,-40,0,-15,-40,-15,0,-40,0,15,-40,15,0,-20,0,-15,-20,-15,0,-20,0,15,-20,15,0,0,0,-15,0,-15,0,0,0,15,0,15,0,20,0,-15,20,-15,0,20,0,15,20,15,0,40,0,-15,40,-15,0,40,0,15,40,15,0,60,0,-15,60,-15,0,60,0,15,60
+		} 
+		GeometryVersion: 124
+	}
+	NodeAttribute: 8708336, "NodeAttribute::SkeletonRoot", "Root" {
+		TypeFlags: "Null", "Skeleton", "Root"
+	}
+	NodeAttribute: 8710528, "NodeAttribute::SkeletonLimbNode1", "LimbNode" {
+		Properties70:  {
+			P: "Size", "double", "Number", "",1
+		}
+		TypeFlags: "Skeleton"
+	}
+	NodeAttribute: 8745504, "NodeAttribute::SkeletonLimbNode2", "LimbNode" {
+		Properties70:  {
+			P: "Size", "double", "Number", "",1
+		}
+		TypeFlags: "Skeleton"
+	}
+	Model: 8706336, "Model::Patch", "Patch" {
+		Version: 232
+		Properties70:  {
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-90,0,0
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 8708528, "Model::SkeletonRoot", "Root" {
+		Version: 232
+		Properties70:  {
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0,-40,0
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 8743504, "Model::SkeletonLimbNode1", "LimbNode" {
+		Version: 232
+		Properties70:  {
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0,40,0
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 8745696, "Model::SkeletonLimbNode2", "LimbNode" {
+		Version: 232
+		Properties70:  {
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0,40,0
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Pose: 8768480, "Pose::Patch", "BindPose" {
+		Type: "BindPose"
+		Version: 100
+		NbPoseNodes: 5
+		PoseNode:  {
+			Node: 0
+			Matrix: *16 {
+				a: 1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1
+			} 
+		}
+		PoseNode:  {
+			Node: 8708528
+			Matrix: *16 {
+				a: 1,0,0,0,0,1,0,0,0,0,1,0,0,-40,0,1
+			} 
+		}
+		PoseNode:  {
+			Node: 8743504
+			Matrix: *16 {
+				a: 1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1
+			} 
+		}
+		PoseNode:  {
+			Node: 8745696
+			Matrix: *16 {
+				a: 1,0,0,0,0,1,0,0,0,0,1,0,0,40,0,1
+			} 
+		}
+		PoseNode:  {
+			Node: 8706336
+			Matrix: *16 {
+				a: 1,0,0,0,0,6.12323399573677e-017,-1,0,0,1,6.12323399573677e-017,0,0,0,0,1
+			} 
+		}
+	}
+	Pose: 8769456, "Pose::A Rest Pose", "RestPose" {
+		Type: "RestPose"
+		Version: 100
+		NbPoseNodes: 3
+		PoseNode:  {
+			Node: 8708528
+			Matrix: *16 {
+				a: 0.707106781186548,0.707106781186547,-0,0,-0.707106781186547,0.707106781186548,0,0,0,0,1,0,10,10,10,1
+			} 
+			Local: 0
+		}
+		PoseNode:  {
+			Node: 8743504
+			Matrix: *16 {
+				a: 6.12323399573677e-017,-1,-0,0,1,6.12323399573677e-017,0,0,0,-0,1,0,0,40,0,1
+			} 
+			Local: 1
+		}
+		PoseNode:  {
+			Node: 8745696
+			Matrix: *16 {
+				a: 0.707106781186548,0.707106781186547,-0,0,-0.707106781186547,0.707106781186548,0,0,0,0,1,0,0,40,0,1
+			} 
+			Local: 1
+		}
+	}
+	Deformer: 8760080, "Deformer::", "Skin" {
+		Version: 101
+		Link_DeformAcuracy: 50
+	}
+	Deformer: 8747696, "SubDeformer::", "Cluster" {
+		Version: 100
+		Mode: "Total1"
+		UserData: "", ""
+		Indexes: *16 {
+			a: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
+		} 
+		Weights: *16 {
+			a: 1,1,1,1,0.75,0.75,0.75,0.75,0.5,0.5,0.5,0.5,0.25,0.25,0.25,0.25
+		} 
+		Transform: *16 {
+			a: 1,0,0,0,0,6.12323399573677e-017,-1,0,0,1,6.12323399573677e-017,0,0,40,0,1
+		} 
+		TransformLink: *16 {
+			a: 1,0,0,0,-0,1,0,0,0,-0,1,0,0,-40,0,1
+		} 
+	}
+	Deformer: 8748448, "SubDeformer::", "Cluster" {
+		Version: 100
+		Mode: "Total1"
+		UserData: "", ""
+		Indexes: *20 {
+			a: 4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23
+		} 
+		Weights: *20 {
+			a: 0.25,0.25,0.25,0.25,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.25,0.25,0.25,0.25
+		} 
+		Transform: *16 {
+			a: 1,0,0,0,0,6.12323399573677e-017,-1,0,0,1,6.12323399573677e-017,0,0,0,0,1
+		} 
+		TransformLink: *16 {
+			a: 1,0,0,0,-0,1,0,0,0,-0,1,0,0,0,0,1
+		} 
+	}
+	Deformer: 8757408, "SubDeformer::", "Cluster" {
+		Version: 100
+		Mode: "Total1"
+		UserData: "", ""
+		Indexes: *16 {
+			a: 12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27
+		} 
+		Weights: *16 {
+			a: 0.25,0.25,0.25,0.25,0.5,0.5,0.5,0.5,0.75,0.75,0.75,0.75,1,1,1,1
+		} 
+		Transform: *16 {
+			a: 1,0,0,0,0,6.12323399573677e-017,-1,0,0,1,6.12323399573677e-017,0,0,-40,0,1
+		} 
+		TransformLink: *16 {
+			a: 1,0,0,0,-0,1,0,0,0,-0,1,0,0,40,0,1
+		} 
+	}
+	AnimationStack: 8772704, "AnimStack::Bend on 2 sides", "" {
+	}
+	AnimationStack: 8772496, "AnimStack::Bend and turn around", "" {
+	}
+	AnimationLayer: 7911824, "AnimLayer::Base Layer", "" {
+	}
+	AnimationLayer: 7912096, "AnimLayer::Base Layer", "" {
+	}
+	AnimationCurveNode: 8771872, "AnimCurveNode::R", "" {
+		Properties70:  {
+			P: "d|X", "Number", "", "A",0
+			P: "d|Y", "Number", "", "A",0
+			P: "d|Z", "Number", "", "A",0
+		}
+	}
+	AnimationCurveNode: 8773120, "AnimCurveNode::R", "" {
+		Properties70:  {
+			P: "d|X", "Number", "", "A",0
+			P: "d|Y", "Number", "", "A",0
+			P: "d|Z", "Number", "", "A",0
+		}
+	}
+	AnimationCurveNode: 8774576, "AnimCurveNode::R", "" {
+		Properties70:  {
+			P: "d|X", "Number", "", "A",0
+			P: "d|Y", "Number", "", "A",0
+			P: "d|Z", "Number", "", "A",0
+		}
+	}
+	AnimationCurveNode: 8772080, "AnimCurveNode::R", "" {
+		Properties70:  {
+			P: "d|X", "Number", "", "A",0
+			P: "d|Y", "Number", "", "A",0
+			P: "d|Z", "Number", "", "A",0
+		}
+	}
+	AnimationCurve: 8775280, "AnimCurve::", "" {
+		Default: 0
+		KeyVer: 4009
+		KeyTime: *4 {
+			a: 0,46186158000,92372316000,138558474000
+		} 
+		KeyValueFloat: *4 {
+			a: 0,45,-45,0
+		} 
+		;KeyAttrFlags: Cubic|TangeantAuto|GenericTimeIndependent, Cubic|TangeantAuto|GenericTimeIndependent, Cubic|TangeantAuto|GenericTimeIndependent, Cubic|TangeantAuto|GenericTimeIndependent
+		KeyAttrFlags: *4 {
+			a: 8456,8456,8456,8456
+		} 
+		;KeyAttrDataFloat: RightAuto:0, NextLeftAuto:0; RightAuto:0, NextLeftAuto:0; RightAuto:0, NextLeftAuto:0; RightAuto:0, NextLeftAuto:0
+		KeyAttrDataFloat: *16 {
+			a: 0,0,218434821,0,0,0,218434821,0,0,0,218434821,0,0,0,218434821,0
+		} 
+		KeyAttrRefCount: *4 {
+			a: 1,1,1,1
+		} 
+	}
+	AnimationCurve: 8832992, "AnimCurve::", "" {
+		Default: 0
+		KeyVer: 4009
+		KeyTime: *4 {
+			a: 0,46186158000,92372316000,138558474000
+		} 
+		KeyValueFloat: *4 {
+			a: 0,-90,90,0
+		} 
+		;KeyAttrFlags: Cubic|TangeantAuto|GenericTimeIndependent, Cubic|TangeantAuto|GenericTimeIndependent, Cubic|TangeantAuto|GenericTimeIndependent, Cubic|TangeantAuto|GenericTimeIndependent
+		KeyAttrFlags: *4 {
+			a: 8456,8456,8456,8456
+		} 
+		;KeyAttrDataFloat: RightAuto:0, NextLeftAuto:0; RightAuto:0, NextLeftAuto:0; RightAuto:0, NextLeftAuto:0; RightAuto:0, NextLeftAuto:0
+		KeyAttrDataFloat: *16 {
+			a: 0,0,218434821,0,0,0,218434821,0,0,0,218434821,0,0,0,218434821,0
+		} 
+		KeyAttrRefCount: *4 {
+			a: 1,1,1,1
+		} 
+	}
+	AnimationCurve: 8834352, "AnimCurve::", "" {
+		Default: 0
+		KeyVer: 4009
+		KeyTime: *2 {
+			a: 0,92372316000
+		} 
+		KeyValueFloat: *2 {
+			a: 0,720
+		} 
+		;KeyAttrFlags: Cubic|TangeantAuto|GenericTimeIndependent, Cubic|TangeantAuto|GenericTimeIndependent
+		KeyAttrFlags: *2 {
+			a: 8456,8456
+		} 
+		;KeyAttrDataFloat: RightAuto:0, NextLeftAuto:0; RightAuto:0, NextLeftAuto:0
+		KeyAttrDataFloat: *8 {
+			a: 0,0,218434821,0,0,0,218434821,0
+		} 
+		KeyAttrRefCount: *2 {
+			a: 1,1
+		} 
+	}
+	AnimationCurve: 8835712, "AnimCurve::", "" {
+		Default: 0
+		KeyVer: 4009
+		KeyTime: *3 {
+			a: 0,46186158000,92372316000
+		} 
+		KeyValueFloat: *3 {
+			a: 0,90,0
+		} 
+		;KeyAttrFlags: Cubic|TangeantAuto|GenericTimeIndependent, Cubic|TangeantAuto|GenericTimeIndependent, Cubic|TangeantAuto|GenericTimeIndependent
+		KeyAttrFlags: *3 {
+			a: 8456,8456,8456
+		} 
+		;KeyAttrDataFloat: RightAuto:0, NextLeftAuto:0; RightAuto:0, NextLeftAuto:0; RightAuto:0, NextLeftAuto:0
+		KeyAttrDataFloat: *12 {
+			a: 0,0,218434821,0,0,0,218434821,0,0,0,218434821,0
+		} 
+		KeyAttrRefCount: *3 {
+			a: 1,1,1
+		} 
+	}
+}
+
+; Object connections
+;------------------------------------------------------------------
+
+Connections:  {
+	
+	;Model::Patch, Model::RootNode
+	C: "OO",8706336,0
+	
+	;Model::SkeletonRoot, Model::RootNode
+	C: "OO",8708528,0
+	
+	;Geometry::Patch, Model::Patch
+	C: "OO",8520768,8706336
+	
+	;Deformer::, Geometry::Patch
+	C: "OO",8760080,8520768
+	
+	;NodeAttribute::SkeletonRoot, Model::SkeletonRoot
+	C: "OO",8708336,8708528
+	
+	;Model::SkeletonLimbNode1, Model::SkeletonRoot
+	C: "OO",8743504,8708528
+	
+	;AnimCurveNode::R, Model::SkeletonRoot
+	C: "OP",8771872,8708528, "Lcl Rotation"
+	
+	;AnimCurveNode::R, Model::SkeletonRoot
+	C: "OP",8774576,8708528, "Lcl Rotation"
+	
+	;NodeAttribute::SkeletonLimbNode1, Model::SkeletonLimbNode1
+	C: "OO",8710528,8743504
+	
+	;Model::SkeletonLimbNode2, Model::SkeletonLimbNode1
+	C: "OO",8745696,8743504
+	
+	;AnimCurveNode::R, Model::SkeletonLimbNode1
+	C: "OP",8773120,8743504, "Lcl Rotation"
+	
+	;AnimCurveNode::R, Model::SkeletonLimbNode1
+	C: "OP",8772080,8743504, "Lcl Rotation"
+	
+	;NodeAttribute::SkeletonLimbNode2, Model::SkeletonLimbNode2
+	C: "OO",8745504,8745696
+	
+	;SubDeformer::, Deformer::
+	C: "OO",8747696,8760080
+	
+	;SubDeformer::, Deformer::
+	C: "OO",8748448,8760080
+	
+	;SubDeformer::, Deformer::
+	C: "OO",8757408,8760080
+	
+	;Model::SkeletonRoot, SubDeformer::
+	C: "OO",8708528,8747696
+	
+	;Model::SkeletonLimbNode1, SubDeformer::
+	C: "OO",8743504,8748448
+	
+	;Model::SkeletonLimbNode2, SubDeformer::
+	C: "OO",8745696,8757408
+	
+	;AnimLayer::Base Layer, AnimStack::Bend on 2 sides
+	C: "OO",7911824,8772704
+	
+	;AnimCurveNode::R, AnimLayer::Base Layer
+	C: "OO",8771872,7911824
+	
+	;AnimCurveNode::R, AnimLayer::Base Layer
+	C: "OO",8773120,7911824
+	
+	;AnimCurve::, AnimCurveNode::R
+	C: "OP",8775280,8771872, "d|Z"
+	
+	;AnimCurve::, AnimCurveNode::R
+	C: "OP",8832992,8773120, "d|Z"
+	
+	;AnimLayer::Base Layer, AnimStack::Bend and turn around
+	C: "OO",7912096,8772496
+	
+	;AnimCurveNode::R, AnimLayer::Base Layer
+	C: "OO",8774576,7912096
+	
+	;AnimCurveNode::R, AnimLayer::Base Layer
+	C: "OO",8772080,7912096
+	
+	;AnimCurve::, AnimCurveNode::R
+	C: "OP",8834352,8774576, "d|Y"
+	
+	;AnimCurve::, AnimCurveNode::R
+	C: "OP",8835712,8772080, "d|Z"
+}
+;Takes section
+;----------------------------------------------------
+
+Takes:  {
+	Current: ""
+	Take: "Bend on 2 sides" {
+		FileName: "Bend_on_2_sides.tak"
+		LocalTime: 0,138558474000
+		ReferenceTime: 0,138558474000
+	}
+	Take: "Bend and turn around" {
+		FileName: "Bend_and_turn_around.tak"
+		LocalTime: 0,138558474000
+		ReferenceTime: 0,138558474000
+	}
+}

@@ -1,0 +1,7 @@
+debug_txt_1
+debug_txt_2
+debug_txt_3
+WSH exe File Name     =     Windows Script Host
+WSH exe WScript Full Path  =  C:\Windows\System32
+WSH version   =  5.812
+

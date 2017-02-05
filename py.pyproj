@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b5b23988-5941-4d3f-982b-a881f2da00f7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>fbx\samples\ExportScene01\ExportScene01.py</StartupFile>
+    <StartupFile>fbx\lib\Python27_x64\DebugLogger00100.py</StartupFile>
     <SearchPath>FBXpythonSDK201701\;FBXpythonSDK201701\include\;FBXpythonSDK201701\lib\;FBXpythonSDK201701\samples\;FBXpythonSDK201701\lib\Python27_x64\;..\..\Program Files\Autodesk\Maya2017\Python\Lib\site-packages\;..\..\Program Files\Autodesk\Maya2017\devkit\other\pymel\extras\completion\py\maya\;..\..\Program Files\Autodesk\Maya2017\Python\Lib\site-packages\pymel\core\;..\..\Program Files\Autodesk\Maya2017\lib\;..\..\Program Files\Autodesk\Maya2017\devkit\other\pymel\extras\completion\py\;fbx\;..\..\Program Files\Autodesk\FBX\FBX SDK\2017.1\include\;..\..\Program Files\Autodesk\FBX\FBX Python SDK\2017.1\include\</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <InterpreterId>{6235fbd1-bb10-46e7-b298-773771b08eee}</InterpreterId>
@@ -36,10 +36,12 @@
     <Compile Include="DebugLogger00110.py" />
     <Compile Include="FbxImport_WriteReadTrans_Z_00610.py" />
     <Compile Include="fbx\lib\Python27_x64\DebugLogger00100.py" />
+    <Compile Include="fbx\lib\Python27_x64\ExportScene01.py" />
     <Compile Include="fbx\lib\Python27_x64\FbxCommon - Copy.py" />
     <Compile Include="fbx\lib\Python27_x64\FbxCommon.py" />
     <Compile Include="fbx\lib\Python27_x64\FbxImport_WriteReadTrans_Z_00610.py" />
     <Compile Include="fbx\lib\Python27_x64\GetKeyCurve00110.py" />
+    <Compile Include="fbx\lib\Python27_x64\py3.py" />
     <Compile Include="fbx\lib\Python27_x64\WriteReadTrans_Z_00310.py" />
     <Compile Include="fbx\lib\Python27_x86\FbxCommon.py" />
     <Compile Include="fbx\samples\ExportScene01\ExportScene01.py" />
@@ -114,6 +116,7 @@
     <Folder Include="fbx\samples\ImportScene\" />
     <Folder Include="fbx\samples\Layers\" />
     <Folder Include="fbx\samples\SplitMeshPerMaterial\" />
+    <Folder Include="windowsScriptHost_Env00200\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fbx\include\fbxsdk.h" />
